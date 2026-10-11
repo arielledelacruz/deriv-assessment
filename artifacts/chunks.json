@@ -1,0 +1,37 @@
+[
+  {
+    "chunk_id": "chunk_173406b4b839",
+    "doc_id": "api_limits",
+    "text": "# API rate limits\n\nThe standard API rate limit is 100 requests per minute per workspace. The response includes rate-limit headers showing the current limit and remaining requests.\n\nWhen a workspace exceeds its rate limit, the API returns HTTP 429 Too Many Requests. The response includes a `Retry-After` header indicating how many seconds to wait before retrying. Clients should wait for that interval before sending another request.\n",
+    "start_char": 0,
+    "end_char": 434
+  },
+  {
+    "chunk_id": "chunk_75a633b5454d",
+    "doc_id": "auth",
+    "text": "# Authentication\n\nThe Example Developer Platform API supports API keys and OAuth 2.0 client credentials. Supported authentication methods are API keys and OAuth 2.0 client credentials. Send an API key in the `Authorization: Bearer` header. For OAuth 2.0, exchange a client ID and client secret for a short-lived access token, then send that token as a bearer token.\n\nCreate and revoke API keys from the workspace security settings. Treat API keys and client secrets as confidential credentials; do not place them in browser code or public repositories. Requests without valid credentials receive an HTTP 401 response.\n",
+    "start_char": 0,
+    "end_char": 618
+  },
+  {
+    "chunk_id": "chunk_9ac50ba57756",
+    "doc_id": "pricing",
+    "text": "# Plans and pricing\n\nThe Example Developer Platform has Starter, Growth, and Enterprise plans. Starter costs $29 per workspace per month and includes one production project. Growth costs $99 per workspace per month and includes up to five production projects. Enterprise pricing is arranged with the sales team.\n\nThere is no free plan. A no-cost sandbox workspace is available for testing and does not include production access. Plan changes take effect at the start of the next billing period. The knowledge base does not specify discounts for startups.",
+    "start_char": 0,
+    "end_char": 554
+  },
+  {
+    "chunk_id": "chunk_b71e94fc2033",
+    "doc_id": "retention",
+    "text": "# Data retention and deletion\n\nCustomer event data is retained for 90 days. Webhook delivery logs are retained for 14 days. Workspace administrators can request deletion of customer data through the support portal.\n\nCustomer data deletion requests are completed within 30 days, not immediately. The knowledge base does not describe a self-service deletion API.",
+    "start_char": 0,
+    "end_char": 360
+  },
+  {
+    "chunk_id": "chunk_9f863729fdb9",
+    "doc_id": "webhooks",
+    "text": "# Webhooks\n\nWebhook deliveries use HTTPS POST requests with a JSON event body. Each delivery includes a signature header that consumers can verify with the signing secret configured for the endpoint.\n\nFailed webhook deliveries are retried with exponential backoff for up to 24 hours. Delivery logs are retained for 14 days and can be viewed in the workspace dashboard. The platform does not guarantee delivery after the retry period expires.",
+    "start_char": 0,
+    "end_char": 441
+  }
+]

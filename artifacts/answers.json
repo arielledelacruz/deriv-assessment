@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "question": "What authentication methods does the API support?",
+    "answer": "Supported authentication methods are API keys and OAuth 2.0 client credentials.",
+    "supported": true,
+    "citations": [
+      "chunk_75a633b5454d"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "How long are webhook delivery logs retained?",
+    "answer": "Webhook delivery logs are retained for 14 days.",
+    "supported": true,
+    "citations": [
+      "chunk_b71e94fc2033"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Is there a free plan for startups?",
+    "answer": "There is no free plan.",
+    "supported": true,
+    "citations": [
+      "chunk_9ac50ba57756"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What happens if I exceed the rate limit?",
+    "answer": "When a workspace exceeds its rate limit, the API returns HTTP 429 Too Many Requests.",
+    "supported": true,
+    "citations": [
+      "chunk_173406b4b839"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Can I delete customer data immediately on request?",
+    "answer": "Customer data deletion requests are completed within 30 days, not immediately. Workspace administrators can request deletion of customer data through the support portal.",
+    "supported": true,
+    "citations": [
+      "chunk_b71e94fc2033"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Does the platform support GraphQL subscriptions?",
+    "answer": "The knowledge base does not provide enough information to answer this.",
+    "supported": false,
+    "citations": []
+  }
+]
